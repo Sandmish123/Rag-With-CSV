@@ -47,14 +47,6 @@ Create `.env`
 
 ---
 
-## Example Query
-
-```json id="lmj9y4"
-{
-  "query": "Which customer generated highest revenue?"
-}
-```
-
 ---
 
 
