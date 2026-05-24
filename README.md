@@ -24,23 +24,6 @@ CSV → Chunking → Embeddings → Vector DB → Retrieval → LLM → Answer
 
 ---
 
-## Project Structure
-
-```txt id="33x1nr"
-rag-with-csv/
-│
-├── apps/
-├── configs/
-├── data/
-├── src/
-├── tests/
-├── .env
-├── pyproject.toml
-└── README.md
-```
-
----
-
 ## Installation
 
 ```bash id="04t8p2"
@@ -58,36 +41,8 @@ pip install -r requirements.txt
 Create `.env`
 
 ```env id="2b9flj"
-OPENAI_API_KEY=your_key
-QDRANT_URL=http://localhost:6333
-```
-
----
-
----
-
-## Add CSV
-
-Place CSV files inside:
-
-```txt id="68w6cl"
-data/raw/
-```
-
----
-
-## Ingest Data
-
-```bash id="xw9mrf"
-python scripts/ingest_csv.py
-```
-
----
-
-## Start API
-
-```bash id="v8m3we"
-uvicorn apps.api.main:app --reload
+    INPUT_FILE= sample_data.xlsx
+    OUTPUT_FILE=output.json
 ```
 
 ---
@@ -99,7 +54,6 @@ uvicorn apps.api.main:app --reload
   "query": "Which customer generated highest revenue?"
 }
 ```
-
 
 ---
 
