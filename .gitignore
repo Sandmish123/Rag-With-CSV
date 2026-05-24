@@ -1,0 +1,18 @@
+# Environment files
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+test_env/
+venv/
+env/
+
+# Excel files
+*.xlsx
+
+# Optional
+.vscode/
+.idea/
